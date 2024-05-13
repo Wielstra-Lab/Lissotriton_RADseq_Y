@@ -9,6 +9,21 @@ _Notes on identification of male-linked presence/absence markers in Lissotriton 
 **BLAST+:** v2.13.0  
 **Primer 3:** v2.6.1  
 
+### Scripts used: ###
+
+RADcov.pl  
+RADcoverage.sh  
+RADsort_sexed_1.R  
+RADsort_sexed_2.R  
+fasta_to_primer_IO_2.sh 
+
+### Files used: ###
+
+PopMap_Liss_sexed_1.txt  
+IO_header_2  
+Liss_Y_1_table.txt   
+combined_liss_Y.fa  
+
 SECTION 1: Upstream RADseq bioinformatics
 -----------------------------------------
 > The denovo_map.pl program from the stacks package was run on the sexed data set 3 times with different values for parameter M (2, 6 and 10)
