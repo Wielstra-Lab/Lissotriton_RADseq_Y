@@ -10,6 +10,35 @@ _Notes on construction of L. vulgaris RADseq linkage map_
 **BLAST+:** v2.13.0   
 **Lep-MAP3:** v0.5  
 
+### Scripts used: ###  
+
+RADcov.pl  
+RADcoverage.sh  
+Coverage_sort_1.R  
+Coverage_filter_1.R  
+Add_to_call_table_sexed.R  
+Trim_map_2.R  
+arrange_map.R  
+Filter_blast.R  
+Plot_map_v_genome_1.R  
+Draw_groups.R  
+Plot_marker_density.R  
+Plot_paternal_markers.R  
+Plot_paternal_probability.R
+
+### Files used: ###
+
+PopMap_Liss_Linkage_1.txt  
+Liss_RAD.ped  
+Pluro_genome_struct_chr.txt  
+father_hetero_markers_filtered_by_mother.txt  
+Paternal_specific_snps_marker_list.txt  
+Liss_Y_markers.txt  
+
+
+
+
+
 SECTION 1: Upstream RADseq bioinformatics
 -----------------------------------------
 
@@ -67,7 +96,7 @@ Rscript Coverage_filter_1.R sexed_Y_candidates_raw.cov sexed_Y_candidates_filter
 > Add_to_call_table_sexed.R was used to transform the coverage table into Psuedo-SNP calls in a format compatable with LepMAP 3
 
 ```sh
-Rscript Add_to_call_table_sexed.R sexed_Y_candidates_raw.cov Y_marker_calls_1.txt Y
+Rscript Add_to_call_table_sexed.R sexed_Y_candidates_filtered.cov Y_marker_calls_1.txt Y
 ```
 
 SECTION 3: Linkage map construction
