@@ -21,8 +21,7 @@ fasta_to_primer_IO_2.sh
 
 PopMap_Liss_sexed_1.txt  
 IO_header_2  
-Liss_Y_1_table.txt   
-combined_liss_Y.fa  
+Combined_Liss_Y.fa  
 
 SECTION 1: Upstream RADseq bioinformatics
 -----------------------------------------
@@ -115,7 +114,7 @@ SECTION 3: Primer design
 > The input file for primer 3 was created by running the fasta_to_primer_IO_2.sh script (the IO_header_2 contains the common settings for all primer pairs)
 
 ```sh
-sh fasta_to_primer_IO_2.sh  Liss_Y_1_table.txt combined_liss_Y.fa IO_header_2 Liss_IO_2
+sh fasta_to_primer_IO_2.sh Combined_Liss_Y.fa IO_header_2 Liss_IO_2
 ```
 > The resultant Liss_IO_2 file was then used as the input for primer 3
 
